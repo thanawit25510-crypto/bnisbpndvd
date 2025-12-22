@@ -325,6 +325,9 @@ const ONLINE = {
             <img src="logo.png" alt="logo">
             <span>ทำอะไรกินดี</span>
           </a>
+          
+          <button class="menu-toggle" aria-label="เมนู">☰</button>
+
           <nav class="nav">
             <a href="index.html" class="${active==='home'?'active':''}">หน้าแรก</a>
             <a href="category.html" class="${active==='cats'?'active':''}">เมนูยอดนิยม</a>
