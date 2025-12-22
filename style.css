@@ -336,34 +336,6 @@ img{ max-width:100%; display:block; }
   .ing-row{ grid-template-columns: 1fr; }
 }
 
-/* ===== Mobile Topbar Fix (ไม่กระทบ Desktop) ===== */
-@media (max-width: 640px){
-  .topbar-inner{
-    flex-wrap: wrap;          /* แยกเป็น 2 แถวชัดเจน */
-    gap: 8px;
-  }
-
-  .brand{
-    flex: 1 1 100%;           /* โลโก้ + ชื่อเว็บ อยู่แถวบนเต็มบรรทัด */
-    justify-content: center;
-  }
-
-  .nav{
-    flex: 1 1 100%;
-    display: grid;            /* ใช้ grid แทน flex เฉพาะมือถือ */
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-    margin-left: 0;           /* ตัด margin-left:auto ของ desktop */
-  }
-
-  .nav a{
-    text-align: center;
-    white-space: nowrap;      /* กันคำแตกบรรทัด */
-    padding: 10px 8px;
-    font-size: 14px;
-  }
-}
-
 /* ===== Hamburger Menu (Mobile only) ===== */
 .menu-toggle{
   display: none;
@@ -400,15 +372,3 @@ img{ max-width:100%; display:block; }
     white-space: nowrap;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
