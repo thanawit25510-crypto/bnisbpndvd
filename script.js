@@ -387,6 +387,27 @@ const ONLINE = {
       return sel.some(s=>ingNames.includes(s));
     });
   }
+// ===== Mobile hamburger menu (ใช้ทุกหน้า) =====
+function bindMobileMenu(){
+  const btn = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
+  if(!btn || !nav) return;
+
+  // กัน bind ซ้ำ
+  if(btn.dataset.bound === '1') return;
+  btn.dataset.bound = '1';
+
+  btn.addEventListener('click', ()=>{
+    nav.classList.toggle('open');
+  });
+
+  // กดเมนูแล้วปิด (เฉพาะมือถือ)
+  nav.addEventListener('click', (e)=>{
+    if(e.target && e.target.tagName === 'A'){
+      nav.classList.remove('open');
+    }
+  });
+}
 
   function renderHome(){
     const recipes = getRecipes();
