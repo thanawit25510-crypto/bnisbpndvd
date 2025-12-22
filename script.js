@@ -477,6 +477,7 @@ function bindMobileMenu(){
         </div>
       </div>
     `;
+bindMobileMenu();
 
     // state
     let selected = pantry.slice();
@@ -624,6 +625,7 @@ function bindMobileMenu(){
         </div>
       </div>
     `;
+bindMobileMenu();
   }
 
   function renderAbout(){
@@ -646,6 +648,7 @@ function bindMobileMenu(){
         </div>
       </div>
     `;
+bindMobileMenu();
   }
 
   function renderAddIngredient(){
@@ -672,6 +675,7 @@ function bindMobileMenu(){
       </div>
     `;
 
+bindMobileMenu();
     let selected = pantry.slice();
 
     function render(){
@@ -786,6 +790,7 @@ function bindMobileMenu(){
       </div>
     `;
 
+bindMobileMenu();
     const ingList = $('#ingList');
 
     let ingRows = (model.ingredients && model.ingredients.length) ? model.ingredients.map(x=>({name:x.name||'', amount:x.amount||''})) : [{name:'', amount:''}];
@@ -906,6 +911,7 @@ function bindMobileMenu(){
           </div>
         </div>
       `;
+bindMobileMenu();
       return;
     }
 
@@ -956,6 +962,7 @@ function bindMobileMenu(){
         </div>
       </div>
     `;
+bindMobileMenu();
   }
 
   async function route(){
@@ -989,6 +996,7 @@ function bindMobileMenu(){
           <p>ลองรีเฟรชหน้า หรือเปิด Console เพื่อดูรายละเอียด</p>
         </div>
       `;
+bindMobileMenu();
     }
   });
 })();
